@@ -1,30 +1,30 @@
 self.__precacheManifest = [
   {
-    "revision": "0e92b19c751a868843a3",
-    "url": "/color-picker/static/css/main.a5db20bc.chunk.css"
+    "revision": "84e9927375e9c0da2c70",
+    "url": "/color-picker/static/css/main.18b66e69.chunk.css"
   },
   {
-    "revision": "0e92b19c751a868843a3",
-    "url": "/color-picker/static/js/main.783bfefd.chunk.js"
+    "revision": "84e9927375e9c0da2c70",
+    "url": "/color-picker/static/js/main.75c57b84.chunk.js"
   },
   {
     "revision": "a7d8e61640eb3f8830d1",
     "url": "/color-picker/static/js/runtime~main.3187d74d.js"
   },
   {
-    "revision": "3ea811e1ceed7a9bcd6b",
+    "revision": "582fed07493a5ceb0e82",
     "url": "/color-picker/static/css/2.95143c82.chunk.css"
   },
   {
-    "revision": "3ea811e1ceed7a9bcd6b",
-    "url": "/color-picker/static/js/2.74319cc2.chunk.js"
+    "revision": "582fed07493a5ceb0e82",
+    "url": "/color-picker/static/js/2.1bbc8c36.chunk.js"
   },
   {
     "revision": "77428cd498bf82179ff99fdb246b2494",
     "url": "/color-picker/static/media/bg.77428cd4.svg"
   },
   {
-    "revision": "feb39345a716563cd51d2ee1fe319f86",
+    "revision": "65129bb9d4cbe014220dddedb8ad3be0",
     "url": "/color-picker/index.html"
   }
 ];
