@@ -1,4 +1,4 @@
-import sizes from "./sizes";
+import sizes from "./sizes.js";
 import bg from "./bg.svg";
 export default {
   "@global": {
@@ -27,14 +27,9 @@ export default {
     width: "50%",
     display: "flex",
     alignItems: "flex-start",
+    // justifyContent: "center",
     flexDirection: "column",
     flexWrap: "wrap",
-    [sizes.down("xl")]: {
-      width: "80%"
-    },
-    [sizes.down("xs")]: {
-      width: "75%"
-    }
   },
   nav: {
     display: "flex",
@@ -52,10 +47,20 @@ export default {
     display: "grid",
     gridTemplateColumns: "repeat(3, 30%)",
     gridGap: "2.5rem",
-    [sizes.down("md")]: {
-      gridTemplateColumns: "repeat(2, 50%)"
+  },
+  [sizes.down("md")]: {
+    container: {
+      width: "80%",
     },
-    [sizes.down("xs")]: {
+    palettes: {
+      gridTemplateColumns: "repeat(2, 50%)",
+    }
+  },
+  [sizes.down("xs")]: {
+    container: {
+      width: "75%",
+    },
+    palettes: {
       gridTemplateColumns: "repeat(1, 100%)",
       gridGap: "1.4rem"
     }

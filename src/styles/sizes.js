@@ -8,6 +8,6 @@ export default {
       lg: "1199.98px",
       xl: "1600px"
     };
-    return `@media (max-width: ${sizes[size]})`;
+    return `@media screen and (max-width: ${sizes[size]})`;
   }
 };

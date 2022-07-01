@@ -19,9 +19,10 @@ const styles = theme => ({
     display: "flex",
     alignItems: "center",
     width: "100%",
-    padding: "0 8px",
+    height: "64px",
+    // padding: "0 8px",
     ...theme.mixins.toolbar,
-    justifyContent: "flex-end"
+    justifyContent: "flex-end",
   },
   content: {
     flexGrow: 1,
@@ -53,6 +54,10 @@ const styles = theme => ({
   },
   button: {
     width: "50%"
+  },
+  ColorBox:{
+    height: "100%",
+    marginTop: "0px",
   }
 });
 

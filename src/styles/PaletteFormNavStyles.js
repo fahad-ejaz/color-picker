@@ -34,19 +34,22 @@ const styles = theme => ({
   navBtns: {
     marginRight: "1rem",
     "& a": {
-      textDecoration: "none"
+      textDecoration: "none",
     },
-    [sizes.down("xs")]: {
-      marginRight: "0.5rem"
-    }
   },
   button: {
     margin: "0 0.5rem",
-    [sizes.down("xs")]: {
+  },
+ 
+  [sizes.down("xs")]: {
+    navBtns: {
+      marginRight: "0.5rem",
+    },
+    button: {
       margin: "0 0.2rem",
-      padding: "0.3rem"
-    }
-  }
+      padding: "0.3rem",
+    },
+  },
 });
 
 export default styles;

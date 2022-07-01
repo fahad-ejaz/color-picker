@@ -21,7 +21,7 @@ class NewPaletteForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: true,
+      open: false,
       colors: seedColors[0].colors
     };
     this.addNewColor = this.addNewColor.bind(this);
@@ -54,17 +54,17 @@ class NewPaletteForm extends Component {
   clearColors() {
     this.setState({ colors: [] });
   }
+
   addRandomColor() {
     const allColors = this.props.palettes.map(p => p.colors).flat();
     let rand;
     let randomColor;
     let isDuplicateColor = true;
+    let helper = (color, randomColor) => color.name === randomColor.name;
     while (isDuplicateColor) {
       rand = Math.floor(Math.random() * allColors.length);
       randomColor = allColors[rand];
-      isDuplicateColor = this.state.colors.some(
-        color => color.name === randomColor.name
-      );
+      isDuplicateColor = this.state.colors.some(helper);
     }
     this.setState({ colors: [...this.state.colors, randomColor] });
   }
@@ -149,13 +149,15 @@ class NewPaletteForm extends Component {
           })}
         >
           <div className={classes.drawerHeader} />
-          <DraggableColorList
-            colors={colors}
-            removeColor={this.removeColor}
-            axis='xy'
-            onSortEnd={this.onSortEnd}
-            distance={20}
-          />
+          <div className={classes.ColorBox}>
+            <DraggableColorList
+              colors={colors}
+              removeColor={this.removeColor}
+              axis='xy'
+              onSortEnd={this.onSortEnd}
+              distance={20}
+            />
+          </div>
         </main>
       </div>
     );

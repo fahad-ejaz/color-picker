@@ -14,18 +14,26 @@ const styles = {
       color: "white",
       transform: "scale(1.5)"
     },
-    [sizes.down("lg")]: {
+    verticalAlign: "top",
+
+  },
+  [sizes.down("lg")]: {
+    root: {
       width: "25%",
       height: "20%"
     },
-    [sizes.down("md")]: {
+  },
+  [sizes.down("md")]: {
+    root: {
       width: "50%",
       height: "10%"
     },
-    [sizes.down("sm")]: {
+  },
+  [sizes.down("sm")]: {
+    root: {
       width: "100%",
       height: "5%"
-    }
+    },
   },
   boxContent: {
     position: "absolute",

@@ -3,31 +3,58 @@ import sizes from "./sizes";
 export default {
   ColorBox: {
     width: "20%",
-    height: props => (props.showingFullPalette ? "25%" : "50%"),
+    height: props => props.showingFullPalette ? "25%" : "50%",
+    // height: "20%",
     margin: "0 auto",
     display: "inline-block",
     position: "relative",
     cursor: "pointer",
-    marginBottom: "-3.5px",
+    verticalAlign: "top",
     "&:hover button": {
       opacity: 1
     },
-    [sizes.down("lg")]: {
+    // [`& ${sizes.down("lg")}`]: {
+    //   // ColorBox: {
+    //     // width: "10%",
+    //     // height: "20%",
+    //     display: "none",
+    //     backgroundColor: "red",
+    // height: props => (props.showingFullPalette ? "20%" : "33.3333%")
+    // height: () => "20%"
+    // }
+  },
+  // },
+  // [sizes.down("md")]: {
+  //   width: "50%",
+  //   // height: props => (props.showingFullPalette ? "10%" : "20%")
+  //   // height: "20%"
+  // },
+  //   [sizes.down("xs")]: {
+  //     width: "100%",
+  //     // height: props => (props.showingFullPalette ? "5%" : "10%")
+  //   }
+  [sizes.down("lg")]: {
+    ColorBox: {
       width: "25%",
       height: props => (props.showingFullPalette ? "20%" : "33.3333%")
-    },
-    [sizes.down("md")]: {
+    }
+  },
+
+  [sizes.down("md")]: {
+    ColorBox: {
       width: "50%",
       height: props => (props.showingFullPalette ? "10%" : "20%")
-    },
-    [sizes.down("xs")]: {
+    }
+  },
+  [sizes.down("xs")]: {
+    ColorBox: {
       width: "100%",
       height: props => (props.showingFullPalette ? "5%" : "10%")
-    }
+    },
   },
   copyText: {
     color: props =>
-      chroma(props.background).luminance() >= 0.7 ? "black" : "white"
+      chroma(props.background).luminance() >= 0.5 ? "black" : "white"
   },
   colorName: {
     color: props =>
@@ -35,7 +62,7 @@ export default {
   },
   seeMore: {
     color: props =>
-      chroma(props.background).luminance() >= 0.7 ? "rgba(0,0,0,0.6)" : "white",
+      chroma(props.background).luminance() >= 0.5 ? "rgba(0,0,0,0.6)" : "white",
     background: "rgba(255, 255, 255, 0.3)",
     position: "absolute",
     border: "none",
@@ -48,8 +75,7 @@ export default {
     textTransform: "uppercase"
   },
   copyButton: {
-    color: props =>
-      chroma(props.background).luminance() >= 0.7 ? "rgba(0,0,0,0.6)" : "white",
+    color: props => chroma(props.background).luminance() >= 0.5 ? "rgba(0,0,0,0.6)" : "white",
     width: "100px",
     height: "30px",
     position: "absolute",

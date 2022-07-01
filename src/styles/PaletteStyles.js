@@ -3,10 +3,12 @@ export default {
   Palette: {
     height: "100vh",
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
+
   },
   colors: {
-    height: "90%"
+    height: "90%",
+    width: "100%",
   },
   goBack: {
     width: "20%",

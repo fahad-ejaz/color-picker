@@ -33,12 +33,13 @@ export default {
     fontSize: "1.5rem"
   },
   miniColor: {
+    verticalAlign: "top",
     height: "25%",
     width: "20%",
     display: "inline-block",
     margin: "0 auto",
     position: "relative",
-    marginBottom: "-3.5px"
+    // marginBottom: "-3.5px"
   },
   deleteIcon: {
     color: "white",

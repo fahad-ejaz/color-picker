@@ -20,9 +20,6 @@ export default {
       textDecoration: "none",
       color: "black"
     },
-    [sizes.down("xs")]: {
-      display: "none"
-    }
   },
   slider: {
     width: "340px",
@@ -44,9 +41,16 @@ export default {
       marginLeft: "-7px",
       marginTop: "-3px"
     },
-    [sizes.down("sm")]: {
+  },
+  [sizes.down("xs")]: {
+    logo: {
+      display: "none",
+    },
+  },
+  [sizes.down("sm")]: {
+    slider: {
       width: "150px"
-    }
+    },
   },
   selectContainer: {
     marginLeft: "auto",
