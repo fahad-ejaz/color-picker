@@ -3,8 +3,8 @@ import sizes from "./sizes";
 export default {
   ColorBox: {
     width: "20%",
-    height: props => props.showingFullPalette ? "25%" : "50%",
-    // height: "20%",
+    // height: props => props.showingFullPalette ? "25%" : "50%",
+    height: "20%",
     margin: "0 auto",
     display: "inline-block",
     position: "relative",
@@ -36,33 +36,33 @@ export default {
   [sizes.down("lg")]: {
     ColorBox: {
       width: "25%",
-      height: props => (props.showingFullPalette ? "20%" : "33.3333%")
+      // height: props => (props.showingFullPalette ? "20%" : "33.3333%")
     }
   },
 
   [sizes.down("md")]: {
     ColorBox: {
       width: "50%",
-      height: props => (props.showingFullPalette ? "10%" : "20%")
+      // height: props => (props.showingFullPalette ? "10%" : "20%")
     }
   },
   [sizes.down("xs")]: {
     ColorBox: {
       width: "100%",
-      height: props => (props.showingFullPalette ? "5%" : "10%")
+      // height: props => (props.showingFullPalette ? "5%" : "10%")
     },
   },
   copyText: {
-    color: props =>
-      chroma(props.background).luminance() >= 0.5 ? "black" : "white"
+    // color: props =>
+    //   chroma(props.background).luminance() >= 0.5 ? "black" : "white"
   },
   colorName: {
-    color: props =>
-      chroma(props.background).luminance() <= 0.08 ? "white" : "black"
+    // color: props =>
+    //   chroma(props.background).luminance() <= 0.08 ? "white" : "black"
   },
   seeMore: {
-    color: props =>
-      chroma(props.background).luminance() >= 0.5 ? "rgba(0,0,0,0.6)" : "white",
+    // color: props =>
+    //   chroma(props.background).luminance() >= 0.5 ? "rgba(0,0,0,0.6)" : "white",
     background: "rgba(255, 255, 255, 0.3)",
     position: "absolute",
     border: "none",
@@ -75,7 +75,7 @@ export default {
     textTransform: "uppercase"
   },
   copyButton: {
-    color: props => chroma(props.background).luminance() >= 0.5 ? "rgba(0,0,0,0.6)" : "white",
+    // color: props => chroma(props.background).luminance() >= 0.5 ? "rgba(0,0,0,0.6)" : "white",
     width: "100px",
     height: "30px",
     position: "absolute",
