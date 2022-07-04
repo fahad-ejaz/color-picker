@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2f5428daf2e172d6b131",
+    "revision": "375b72dff505b6c59247",
     "url": "/color-picker/static/css/main.18b66e69.chunk.css"
   },
   {
-    "revision": "2f5428daf2e172d6b131",
-    "url": "/color-picker/static/js/main.8b8e0c1b.chunk.js"
+    "revision": "375b72dff505b6c59247",
+    "url": "/color-picker/static/js/main.414001b0.chunk.js"
   },
   {
     "revision": "a7d8e61640eb3f8830d1",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/color-picker/static/media/bg.77428cd4.svg"
   },
   {
-    "revision": "1c894345f73ed69dcd66821fff5ce16c",
+    "revision": "ee87be9773e58428f8aa81daadad6853",
     "url": "/color-picker/index.html"
   }
 ];
