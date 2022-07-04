@@ -45,4 +45,4 @@ class Palette extends Component {
     );
   }
 }
-export default withStyles(styles)(Palette);
+export default withStyles(styles, {index: 1})(Palette);
