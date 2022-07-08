@@ -98,4 +98,4 @@ class PaletteList extends Component {
     );
   }
 }
-export default withStyles(styles)(PaletteList);
+export default withStyles(styles, {index: 1})(PaletteList);

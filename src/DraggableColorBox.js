@@ -15,4 +15,4 @@ const DraggableColorBox = SortableElement(props => {
     </div>
   );
 });
-export default withStyles(styles)(DraggableColorBox);
+export default withStyles(styles, {index: 1})(DraggableColorBox);

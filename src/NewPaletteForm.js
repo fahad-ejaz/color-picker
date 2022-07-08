@@ -163,4 +163,4 @@ class NewPaletteForm extends Component {
     );
   }
 }
-export default withStyles(styles, { withTheme: true })(NewPaletteForm);
+export default withStyles(styles, { withTheme: true, index: 1},)(NewPaletteForm);

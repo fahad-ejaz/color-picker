@@ -43,4 +43,4 @@ class MiniPalette extends PureComponent {
   }
 }
 
-export default withStyles(styles)(MiniPalette);
+export default withStyles(styles, {index: 1})(MiniPalette);

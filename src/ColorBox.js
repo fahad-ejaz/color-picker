@@ -1,9 +1,15 @@
 import React, { Component } from "react";
+import styles from "./styles/ColorBoxStyles.js";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
 import { withStyles } from "@material-ui/styles";
-import styles from "./styles/ColorBoxStyles.js";
+
+import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
+const generateClassName = createGenerateClassName({
+  seed: 'anyprefix',
+});
+
 
 class ColorBox extends Component {
   constructor(props) {
@@ -28,6 +34,8 @@ class ColorBox extends Component {
 
     const { copied } = this.state;
     return (
+      // <div style={{height: "100%"}}>
+      /* <StylesProvider generateClassName={generateClassName}> */
       <CopyToClipboard onCopy={this.changeCopyState} className={classes.ColorBox}>
         <div style={{ background }}>
           <div
@@ -58,7 +66,9 @@ class ColorBox extends Component {
           )}
         </div>
       </CopyToClipboard >
+      /* </StylesProvider> */
+      // </div>
     );
   }
 }
-export default withStyles(styles, {index: 1})(ColorBox);
+export default withStyles(styles)(ColorBox);

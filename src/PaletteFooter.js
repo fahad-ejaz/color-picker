@@ -11,4 +11,4 @@ function PaletteFooter(props) {
     </footer>
   );
 }
-export default withStyles(styles)(PaletteFooter);
+export default withStyles(styles, {index: 1})(PaletteFooter);
