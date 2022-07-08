@@ -2,7 +2,7 @@ import chroma from "chroma-js";
 import sizes from "./sizes";
 export default {
   ColorBox: {
-    height: props => props.showingFullPalette ? "25% !important" : "50% !important",
+    height: props => props.showingFullPalette ? "25%" : "50%",
     width: "20%",
     margin: "0 auto",
     display: "inline-block",
@@ -34,8 +34,8 @@ export default {
     },
   },
   copyText: {
-    // color: props =>
-    //   chroma(props.background).luminance() >= 0.5 ? "black" : "white"
+    color: props =>
+      chroma(props.background).luminance() >= 0.5 ? "black" : "white"
   },
   colorName: {
     color: props =>
